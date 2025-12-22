@@ -175,6 +175,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
   cursor: pointer;
 }
 button[disabled],
@@ -203,11 +204,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input[type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
@@ -336,7 +339,6 @@ img {
   border: 0.5;
   max-width: 100%;
   height: auto;
-  vertical-align: middle;
 }
 ::selection {
   background: #d93c4d;
@@ -528,8 +530,6 @@ p {
   font-size: 20px;
   line-height: 1.5;
 }
-p, ul, ol, dl, table, fieldset, blockquote, address, pre {
-}
 p:empty {
   display: none;
 }
@@ -601,7 +601,6 @@ abbr {
 }
 .dropcap {
   float: left;
-  display: inline-block;
   margin: 6px 10px -6px 0;
   font-size: 550%;
   font-weight: 500;
@@ -1027,6 +1026,7 @@ textarea {
 }
 input[type="search"] {
   -webkit-appearance: none;
+  appearance: none;
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -1044,7 +1044,8 @@ select {
   /*for firefox*/
   -moz-appearance: none;
   /*for chrome*/
-  -webkit-appearance:none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 /*for IE10*/
 select::-ms-expand {
